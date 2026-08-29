@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==== Projet fashionLens ====
+
+# Data (les datasets ne se commit jamais sur GitHub)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modèles entraînés (souvent trop lourds pour Git)
+models/*.h5
+models/*.keras
+models/*.pt
+!models/.gitkeep
+
+# MLflow tracking
+mlruns/
+mlartifacts/
