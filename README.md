@@ -1,8 +1,8 @@
 # 👗 FashionLens
 
-Assistant de style par IA — envoie une photo d'une pièce de ta garde-robe, reçois des suggestions de pièces complémentaires pour compléter ta tenue. Computer vision, transfer learning, API FastAPI + interface React.
+Assistant de style par IA  envoie une photo d'une pièce de ta garde-robe, reçois des suggestions de pièces complémentaires pour compléter ta tenue. Computer vision, transfer learning, API FastAPI + interface React.
 
-> **Statut : 🚧 Démarrage** — Setup du projet en cours, modélisation à venir.
+> **Statut : 🚧 Démarrage**  Setup du projet en cours, modélisation à venir.
 
 ## 🎯 Objectif
 
@@ -76,3 +76,6 @@ pip install -r requirements.txt
 ## 📝 Licence
 
 MIT
+
+## Auteur 
+Meryem  OUAZIZ Etudiante en Bachelor developpement IA EPSI 
