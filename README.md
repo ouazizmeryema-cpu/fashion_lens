@@ -1,10 +1,10 @@
-# 👗 FashionLens
+# FashionLens
 
 Assistant de style par IA  envoie une photo d'une pièce de ta garde-robe, reçois des suggestions de pièces complémentaires pour compléter ta tenue. Computer vision, transfer learning, API FastAPI + interface React.
 
-> **Statut : 🚧 Démarrage**  Setup du projet en cours, modélisation à venir.
+> **Statut :  Démarrage**  Setup du projet en cours, modélisation à venir.
 
-## 🎯 Objectif
+##  Objectif
 
 Construire un assistant de style capable de recommander comment compléter une tenue à partir d'une simple photo :
 - **Entrée** : une photo d'une pièce de vêtement (un pull, un pantalon...)
@@ -15,11 +15,11 @@ Architecture backend/frontend séparée :
 - **Backend** : API d'analyse et de recommandation visuelle (Python, FastAPI, TensorFlow)
 - **Frontend** : interface d'upload de photo et d'affichage des suggestions (React)
 
-## 📊 Dataset
+##  Dataset
 
 [Shop The Look Dataset](https://www.kaggle.com/datasets/pypiahmad/shop-the-look-dataset) — paires scène complète / produit issues de tenues réelles, permettant d'apprendre quelles pièces sont typiquement associées ensemble *(en cours de validation)*.
 
-## ✅ Avancement
+##  Avancement
 
 - [x] Setup projet (structure, venv, environnement)
 - [x] Cadrage du concept (recommandation de style plutôt que simple classification)
@@ -33,7 +33,7 @@ Architecture backend/frontend séparée :
 - [ ] Interface frontend (React)
 - [ ] Dockerisation
 
-## 🛠️ Stack technique
+##  Stack technique
 
 **Backend**
 - Python, TensorFlow/Keras (transfer learning, extraction de caractéristiques visuelles)
@@ -48,7 +48,7 @@ Architecture backend/frontend séparée :
 **Infra**
 - Docker *(à venir)*
 
-## 📁 Structure du projet
+##  Structure du projet
 
 \`\`\`
 fashionLens/
@@ -63,7 +63,7 @@ fashionLens/
 └── requirements.txt
 \`\`\`
 
-## 🚀 Installation
+##  Installation
 
 \`\`\`bash
 git clone https://github.com/ouazizmeryema-cpu/fashionLens.git
@@ -73,7 +73,7 @@ source venv/Scripts/activate  # Windows (Git Bash)
 pip install -r requirements.txt
 \`\`\`
 
-## 📝 Licence
+## Licence
 
 MIT
 
