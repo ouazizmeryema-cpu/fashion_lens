@@ -1,37 +1,45 @@
 # 👗 FashionLens
 
-Reconnaissance automatique de vêtements par IA — computer vision, transfer learning, API FastAPI + interface React.
+Assistant de style par IA — envoie une photo d'une pièce de ta garde-robe, reçois des suggestions de pièces complémentaires pour compléter ta tenue. Computer vision, transfer learning, API FastAPI + interface React.
 
 > **Statut : 🚧 Démarrage** — Setup du projet en cours, modélisation à venir.
 
 ## 🎯 Objectif
 
-Construire un système capable d'identifier automatiquement la catégorie d'un vêtement (t-shirt, robe, pantalon, chaussures...) à partir d'une simple photo, avec une architecture backend/frontend séparée :
-- **Backend** : API de classification d'image (Python, FastAPI, TensorFlow)
-- **Frontend** : interface d'upload et d'affichage des résultats (React)
+Construire un assistant de style capable de recommander comment compléter une tenue à partir d'une simple photo :
+- **Entrée** : une photo d'une pièce de vêtement (un pull, un pantalon...)
+- **Traitement** : analyse visuelle de la pièce et comparaison avec une base de vraies tenues complètes
+- **Sortie** : suggestions de pièces complémentaires (type de bas/haut, chaussures, style général) pour compléter le look
+
+Architecture backend/frontend séparée :
+- **Backend** : API d'analyse et de recommandation visuelle (Python, FastAPI, TensorFlow)
+- **Frontend** : interface d'upload de photo et d'affichage des suggestions (React)
 
 ## 📊 Dataset
 
-Dataset de vêtements avec catégories labellisées *(à confirmer — dataset Kaggle en cours de sélection)*.
+[Shop The Look Dataset](https://www.kaggle.com/datasets/pypiahmad/shop-the-look-dataset) — paires scène complète / produit issues de tenues réelles, permettant d'apprendre quelles pièces sont typiquement associées ensemble *(en cours de validation)*.
 
 ## ✅ Avancement
 
 - [x] Setup projet (structure, venv, environnement)
-- [ ] Sélection et exploration du dataset
+- [x] Cadrage du concept (recommandation de style plutôt que simple classification)
+- [ ] Sélection et validation du dataset
+- [ ] Exploration des données (structure des paires scène/produit)
 - [ ] Preprocessing des images (redimensionnement, normalisation, augmentation de données)
-- [ ] Modélisation par transfer learning (ResNet / MobileNet)
-- [ ] Évaluation du modèle (accuracy, matrice de confusion)
-- [ ] API de classification (FastAPI, upload d'image)
+- [ ] Extraction de caractéristiques visuelles par transfer learning (ResNet / MobileNet)
+- [ ] Moteur de similarité/recommandation entre pièces
+- [ ] Évaluation qualitative des recommandations
+- [ ] API de recommandation (FastAPI, upload d'image)
 - [ ] Interface frontend (React)
 - [ ] Dockerisation
 
 ## 🛠️ Stack technique
 
 **Backend**
-- Python, TensorFlow/Keras (transfer learning)
+- Python, TensorFlow/Keras (transfer learning, extraction de caractéristiques visuelles)
 - FastAPI + python-multipart (upload d'images)
 - Pillow, NumPy (traitement d'image)
-- Scikit-learn (métriques d'évaluation)
+- Scikit-learn (similarité, métriques d'évaluation)
 
 **Frontend**
 - React (Vite)
@@ -48,7 +56,7 @@ fashionLens/
 ├── notebooks/             # exploration et prototypage
 ├── models/                # modèles entraînés (non versionné)
 ├── src/
-│   ├── features/          # preprocessing des images
+│   ├── features/          # extraction de caractéristiques visuelles
 │   ├── models/             # entraînement, transfer learning
 │   └── api/                # API FastAPI
 ├── tests/
